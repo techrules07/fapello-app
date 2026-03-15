@@ -3,12 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Download, ShieldCheck, Smartphone, Star, HardDrive, RefreshCw, Home, Clock, Info, Database } from 'lucide-react';
+import { Download, ShieldCheck, Smartphone, Star, HardDrive, RefreshCw, Home, Clock, Info } from 'lucide-react';
 import { motion } from 'motion/react';
+import phoneScreen from './assets/1.png';
+import logo from './assets/logo_1.png';
 
 export default function App() {
   const stats = [
-    { label: 'Installs', value: '500K+', icon: <Download className="w-5 h-5" /> },
+    { label: 'Installs', value: '50K+', icon: <Download className="w-5 h-5" /> },
     { label: 'Rating', value: '4.9/5', icon: <Star className="w-5 h-5" /> },
     { label: 'App Size', value: '14MB', icon: <HardDrive className="w-5 h-5" /> },
     { label: 'Content Sync', value: '24/7', icon: <RefreshCw className="w-5 h-5" /> },
@@ -26,8 +28,8 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 py-4 md:px-20 lg:px-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20">
-              <Database className="w-6 h-6" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20 overflow-hidden">
+              <img src={logo} alt="Fapello" className="h-6 w-6 object-contain" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">Fapello App</h2>
           </div>
@@ -36,7 +38,7 @@ export default function App() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="w-full max-w-7xl mx-auto px-6 py-12 md:py-24 lg:px-40">
+        <section className="w-full max-w-7xl mx-auto px-6 py-12 md:py-4 lg:px-40">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <motion.div 
@@ -47,7 +49,7 @@ export default function App() {
             >
               <div className="space-y-4">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold tracking-wide uppercase">
-                  Official Android Release
+                  Android Release
                 </span>
                 <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
                   Experience Fapello <br />
@@ -81,7 +83,7 @@ export default function App() {
               className="relative hidden lg:flex justify-center"
             >
               <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full scale-75" />
-              <div className="relative z-10 w-full max-w-[320px] aspect-[9/18.5] bg-slate-900 rounded-[3rem] p-3 border-[6px] border-slate-800 shadow-2xl overflow-hidden">
+              <div className="relative z-10 w-full max-w-[240px] aspect-[9/18.5] bg-slate-900 rounded-[3rem] p-3 border-[6px] border-slate-800 shadow-2xl overflow-hidden">
                 <div className="h-full w-full rounded-[2.2rem] bg-white overflow-hidden relative">
                   {/* Notch */}
                   <div className="absolute top-0 w-full h-6 bg-slate-900 flex justify-center">
@@ -91,7 +93,7 @@ export default function App() {
                   <div 
                     className="w-full h-full bg-cover bg-center"
                     style={{ 
-                      backgroundImage: 'url("https://picsum.photos/seed/app-ui/600/1200")' 
+                      backgroundImage: `url(${phoneScreen})` 
                     }}
                   />
                   {/* UI Overlay (Simulated) */}
@@ -123,7 +125,7 @@ export default function App() {
       </main>
 
       {/* Mobile Bottom Navigation */}
-      <nav className="md:hidden sticky bottom-0 border-t border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 pb-8 pt-4">
+      {/* <nav className="md:hidden sticky bottom-0 border-t border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 pb-8 pt-4">
         <div className="max-w-md mx-auto flex justify-around items-center">
           <a href="#" className="flex flex-col items-center gap-1 text-primary">
             <Home className="w-6 h-6" />
@@ -138,14 +140,14 @@ export default function App() {
             <span className="text-[10px] font-bold uppercase tracking-wider">About</span>
           </a>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Desktop Footer */}
-      <footer className="hidden md:block py-12 px-6 text-center text-slate-500 text-sm">
+      {/* <footer className="hidden md:block py-12 px-6 text-center text-slate-500 text-sm">
         <div className="max-w-7xl mx-auto border-t border-primary/5 pt-8">
           <p>© 2026 Fapello App. All rights reserved. Official Android Release.</p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
