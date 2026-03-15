@@ -11,9 +11,9 @@ import logo from './assets/logo_1.png';
 export default function App() {
   const stats = [
     { label: 'Installs', value: '50K+', icon: <Download className="w-5 h-5" /> },
-    { label: 'Rating', value: '4.9/5', icon: <Star className="w-5 h-5" /> },
-    { label: 'App Size', value: '14MB', icon: <HardDrive className="w-5 h-5" /> },
+    { label: 'App Size', value: '31MB', icon: <HardDrive className="w-5 h-5" /> },
     { label: 'Content Sync', value: '24/7', icon: <RefreshCw className="w-5 h-5" /> },
+    { label: 'Rating', value: '4.9/5', icon: <Star className="w-5 h-5" /> },
   ];
 
   return (
@@ -61,15 +61,20 @@ export default function App() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-white font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-primary/25 active:scale-95">
+                <a
+                  href="https://github.com/techrules07/fapello-app/releases/download/v1.0/app-release.apk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-white font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-primary/25 active:scale-95"
+                >
                   <Download className="w-6 h-6" />
                   Download APK
-                </button>
+                </a>
                 <div className="flex items-center gap-3 px-4 py-2 border border-slate-200 dark:border-slate-800 rounded-xl bg-white/50 dark:bg-slate-900/50">
                   <ShieldCheck className="w-6 h-6 text-green-500" />
                   <div className="text-xs">
                     <p className="font-bold">Secure Download</p>
-                    <p className="text-slate-500">v2.4.1 • Verified APK</p>
+                    <p className="text-slate-500">v1.0.0 • Verified APK</p>
                   </div>
                 </div>
               </div>
