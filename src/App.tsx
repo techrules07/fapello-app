@@ -62,7 +62,7 @@ export default function App() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://github.com/techrules07/fapello-app/releases/download/v1.0/app-release.apk"
+                  href="https://github.com/techrules07/fapello-app/releases/download/v1.0/fapello.apk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-white font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-primary/25 active:scale-95"
@@ -74,7 +74,7 @@ export default function App() {
                   <ShieldCheck className="w-6 h-6 text-green-500" />
                   <div className="text-xs">
                     <p className="font-bold">Secure Download</p>
-                    <p className="text-slate-500">v1.0.0 • Verified APK</p>
+                    <p className="text-slate-500">v1.1.0 • Verified APK</p>
                   </div>
                 </div>
               </div>
