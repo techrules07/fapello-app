@@ -85,7 +85,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative hidden lg:flex justify-center"
+              className="relative flex justify-center w-full"
             >
               <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full scale-75" />
               <div className="relative z-10 w-full max-w-[240px] aspect-[9/18.5] bg-slate-900 rounded-[3rem] p-3 border-[6px] border-slate-800 shadow-2xl overflow-hidden">
