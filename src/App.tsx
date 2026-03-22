@@ -81,7 +81,7 @@ export default function App() {
                     <ShieldCheck className="w-6 h-6 text-green-500" />
                     <div className="text-xs">
                       <p className="font-bold">Secure Download</p>
-                      <p className="text-slate-500">v1.1.0 • Verified APK</p>
+                      <p className="text-slate-500">v1.2.0 • Verified APK</p>
                     </div>
                   </div>
                 </div>
