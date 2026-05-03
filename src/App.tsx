@@ -69,7 +69,7 @@ export default function App() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://github.com/techrules07/fapello-app/releases/download/v1.0/fapello.apk"
+                    href="https://github.com/appgenie07/Fapello/releases/download/fapello/fapello.apk"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-white font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-primary/25 active:scale-95"
