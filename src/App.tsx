@@ -107,7 +107,7 @@ export default function App() {
             </a>
             <div className="flex items-center gap-1.5 text-xs text-slate-500">
               <ShieldCheck className="w-3.5 h-3.5 text-green-500" />
-              <span>v1.5.0 · Verified · Safe</span>
+              <span>v1.6.0 · Verified · Safe</span>
             </div>
           </motion.div>
 
